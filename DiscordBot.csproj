@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
-
+<Target Name="Build" DependsOnTargets="$(BuildDependsOn)" Outputs="$(TargetPath)"/>
   <ItemGroup>
     <PackageReference Include="System.Diagnostics.Process">
     <Version>4.3.0</Version>
